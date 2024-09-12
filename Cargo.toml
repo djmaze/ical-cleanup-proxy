@@ -1,0 +1,21 @@
+[package]
+name = "ical-proxy"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "transform"
+path = "src/lib/transform.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4.38"
+clap = { version = "4.5.17", features = ["derive"] }
+moka = { version = "0.12.8", features = ["future"] }
+reqwest = "0.12.7"
+rrule = "0.13.0"
+serde = "1.0.210"
+serde_derive = "1.0.210"
+tokio = { version = "1.40.0", features = ["full"] }
+warp = "0.3.7"

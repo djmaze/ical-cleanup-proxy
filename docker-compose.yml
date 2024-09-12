@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    image: decentralize/ical-cleanup-proxy
+    ports:
+      - 3077:3077
