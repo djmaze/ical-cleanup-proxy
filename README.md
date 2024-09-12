@@ -16,6 +16,14 @@ cargo run --bin server
 
 The server is now running on http://localhost:3077 (but it listens on all addresses).
 
+### Options
+
+You can add `--` to add additional args. Try the following to see the available options:
+
+```bash
+cargo run --bin server -- --help
+```
+
 ### Using the server
 
 In order to use it, you need to supply the url to the `.ics` file in the `url` query parameter. Example:
@@ -25,14 +33,6 @@ curl http://localhost:3077/?url=https://calendar.google.com/calendar/ical/.../ba
 ```
 
 This will return a shortened, cleaned-up version of the ics file content.
-
-### Options
-
-You can add `--` to add additional args. Try the following to see the available options:
-
-```bash
-cargo run --bin server -- --help
-```
 
 ## Running via docker
 
